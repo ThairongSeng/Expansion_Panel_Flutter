@@ -1,21 +1,18 @@
-
 import 'package:flutter/material.dart';
-import '../../data/itemData.dart';
+
+import '../data/itemData.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Expansion Panel Demo'),
-      ),
       body: Container(
         padding: const EdgeInsets.all(10),
         child: ListView.builder(
@@ -81,6 +78,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-
-
 }
